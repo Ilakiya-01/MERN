@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Project Management Dashboard</title>
+    <link rel="stylesheet" href="/app.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>Project Management Dashboard</h1>
+      </header>
+
+      <section class="controls">
+        <div class="filter-row">
+          <label for="statusFilter">Filter:</label>
+          <select id="statusFilter">
+            <option value="All">All</option>
+            <option value="Pending">Pending</option>
+            <option value="InProgress">InProgress</option>
+            <option value="Completed">Completed</option>
+          </select>
+          <button id="refreshBtn">Refresh</button>
+        </div>
+
+        <form id="taskForm">
+          <h2>Add New Task</h2>
+          <input name="title" id="title" placeholder="Title" required />
+          <textarea
+            name="description"
+            id="description"
+            placeholder="Description"
+          ></textarea>
+          <div class="row">
+            <select name="priority" id="priority">
+              <option>Low</option>
+              <option selected>Medium</option>
+              <option>High</option>
+            </select>
+            <input type="date" name="dueDate" id="dueDate" />
+            <input name="assignee" id="assignee" placeholder="Assignee" />
+            <button type="submit">Add Task</button>
+          </div>
+        </form>
+      </section>
+
+      <section>
+        <h2>Tasks</h2>
+        <div id="tasks" class="tasks-grid"></div>
+      </section>
+    </div>
+
+    <script src="/app.js"></script>
+  </body>
+</html>

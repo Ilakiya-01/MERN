@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 export default function Home({ data }) {
   const home = data.home || {};
 
@@ -16,6 +17,14 @@ export default function Home({ data }) {
       >
         See My Work
       </a>
+=======
+export default function Home({ homeData }) {
+  return (
+    <section className="h-screen flex flex-col justify-center items-center bg-gradient-to-r from-purple-400 to-pink-400 text-white">
+      <h1 className="text-5xl font-bold mb-4">{homeData?.name}</h1>
+      <p className="text-2xl">{homeData?.title}</p>
+      <p className="text-xl">{homeData?.subtitle}</p>
+>>>>>>> 2095dc6aefdade4f746c055b30f493856505867f
     </section>
   );
 }

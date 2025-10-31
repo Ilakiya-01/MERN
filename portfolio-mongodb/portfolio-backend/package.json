@@ -7,8 +7,14 @@
     "start": "node server.js"
   },
   "dependencies": {
+<<<<<<< HEAD
     "cors": "^2.8.5",
     "express": "^4.21.2",
     "mongoose": "^7.8.7"
+=======
+    "express": "^4.18.2",
+    "mongoose": "^7.5.2",
+    "cors": "^2.8.5"
+>>>>>>> 2095dc6aefdade4f746c055b30f493856505867f
   }
 }
